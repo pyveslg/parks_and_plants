@@ -1,8 +1,10 @@
+<p id="notice"><%= notice %></p>
+
 <div class="container">
-<h1>Tous les jardins :</h1>
-<ul>
-  <% @gardens.each do |garden| %>
-    <li><%= link_to garden.name, garden_path(garden) %></li>
-  <% end %>
-</ul>
+  <h1>Tous les jardins :</h1>
+  <ul>
+    <% @gardens.each do |garden| %>
+      <li><%= link_to garden.name, garden_path(garden) %></li>
+    <% end %>
+  </ul>
 </div>
